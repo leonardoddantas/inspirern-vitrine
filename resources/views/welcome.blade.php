@@ -11,136 +11,186 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="Vitrine w-[1440px] h-[8889px] relative bg-white rounded-3xl">
-  <div class="Rectangle26 w-[1439px] h-[534px] left-0 top-[8251px] absolute bg-[#d9d9d9]"></div>
-  <div class="Rectangle25 w-[1455px] h-[117px] left-0 top-[8772px] absolute bg-[#555555]"></div>
-  <div class="Rectangle8 w-[298px] h-[409px] left-[1044px] top-[1024px] absolute bg-[#d9d9d9] rounded"></div>
-  <div class="Rectangle6 w-[298px] h-[409px] left-[416px] top-[1024px] absolute bg-[#d9d9d9] rounded"></div>
-  <div class="Rectangle5 w-[298px] h-[409px] left-[102px] top-[1024px] absolute bg-[#d9d9d9] rounded"></div>
-  <div class="Logo left-[102px] top-[55px] absolute text-black text-[27px] font-medium font-['Inter']">Logo</div>
-  <div class="Home left-[497px] top-[55px] absolute text-black text-[27px] font-medium font-['Inter']">Home</div>
-  <div class="Restaurantes left-[594px] top-[55px] absolute text-black text-[27px] font-medium font-['Inter']">Restaurantes</div>
-  <div class="Hospedagens left-[1031px] top-[55px] absolute text-black text-[27px] font-medium font-['Inter']">Hospedagens</div>
-  <div class="PontosTuristCos left-[786px] top-[55px] absolute text-black text-[27px] font-medium font-['Inter']">Pontos Turistícos</div>
-  <div class="Cidades left-[1231px] top-[55px] absolute text-black text-[27px] font-medium font-['Inter']">Cidades</div>
-  <div class="ConheAOParaSoPotiguar left-[102px] top-[252px] absolute text-black text-6xl font-semibold font-['Inter']">Conheça o Paraíso Potiguar!</div>
-  <div class="BemVindoAoPortalDeTurismoDoRioGrandeDoNorteDescubraPraiasParadisAcasHistRiaRica w-[1236px] left-[102px] top-[346px] absolute text-black text-2xl font-medium font-['Inter']">Bem-vindo ao portal de turismo do Rio Grande do  Norte! Descubra praias paradisíacas,história rica</div>
-  <div class="PequenaDescriOSobre left-[571px] top-[938px] absolute text-black text-2xl font-medium font-['Inter']">Pequena descrição sobre.</div>
-  <div class="LugaresPopulares left-[531px] top-[866px] absolute text-black text-[42px] font-semibold font-['Inter']">Lugares Populares</div>
-  <div class="DescriOSobre left-[1125px] top-[1358px] absolute text-black text-lg font-normal font-['Inter']">Descrição sobre</div>
-  <div class="Lugar1 left-[211px] top-[1329px] absolute text-black text-2xl font-medium font-['Inter']">Lugar 1</div>
-  <div class="Rectangle7 w-[298px] h-[409px] left-[730px] top-[1024px] absolute bg-[#d9d9d9] rounded"></div>
-  <div class="Lugar2 left-[525px] top-[1329px] absolute text-black text-2xl font-medium font-['Inter']">Lugar 2</div>
-  <div class="DescriOSobre left-[811px] top-[1358px] absolute text-black text-lg font-normal font-['Inter']">Descrição sobre</div>
-  <div class="DescriOSobre left-[183px] top-[1358px] absolute text-black text-lg font-normal font-['Inter']">Descrição sobre</div>
-  <div class="Lugar4 left-[1153px] top-[1329px] absolute text-black text-2xl font-medium font-['Inter']">Lugar 4</div>
-  <div class="Lugar3 left-[839px] top-[1329px] absolute text-black text-2xl font-medium font-['Inter']">Lugar 3</div>
-  <div class="DescriOSobre left-[497px] top-[1358px] absolute text-black text-lg font-normal font-['Inter']">Descrição sobre</div>
-  <div class="Rectangle9 w-[1240px] h-[828px] left-[102px] top-[1642px] absolute bg-[#d9d9d9] rounded-lg"></div>
-  <div class="Rectangle33 w-[1475px] h-[1193px] left-[-35px] top-[7058px] absolute bg-[#b4b4b4]"></div>
-  <div class="OndeNSVamos left-[553px] top-[1675px] absolute text-black text-[42px] font-semibold font-['Inter']">Onde nós vamos</div>
-  <div class="LoremIpsumDolorSitAmetConsecteturAdipisicingElitVoluptatePossimusNullaDucimusCulpaMagniExpeditaUndeVelitOptioQuibusdamQuiQuisRemVoluptasNumquamLaboreAdipisciIpsaDoloremAtqueEos w-[508px] left-[179px] top-[1813px] absolute text-black text-2xl font-normal font-['Inter']">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate possimus nulla ducimus culpa magni expedita, unde velit optio quibusdam qui quis rem voluptas, numquam labore adipisci ipsa dolorem atque eos.</div>
-  <div class="LoremIpsumDolorSitAmetConsecteturAdipisicingElitVoluptatePossimusNullaDucimusCulpaMagniExpeditaUndeVelitOptioQuibusdamQuiQuisRemVoluptasNumquamLaboreAdipisciIpsaDoloremAtqueEos w-[508px] left-[790px] top-[2141px] absolute text-black text-2xl font-normal font-['Inter']">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate possimus nulla ducimus culpa magni expedita, unde velit optio quibusdam qui quis rem voluptas, numquam labore adipisci ipsa dolorem atque eos.</div>
-  <div class="LoremIpsumDolorSitAmetConsecteturAdipisicingElitVoluptatePossimusNullaDucimusCulpaMagniExpedita w-[508px] left-[179px] top-[2004px] absolute text-black text-2xl font-normal font-['Inter']">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate possimus nulla ducimus culpa magni expedita.</div>
-  <div class="LoremIpsumDolorSitAmetConsecteturAdipisicingElitVoluptatePossimusNullaDucimusCulpaMagniExpedita w-[508px] left-[790px] top-[2331px] absolute text-black text-2xl font-normal font-['Inter']">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate possimus nulla ducimus culpa magni expedita.</div>
-  <div class="Rectangle10 w-[469px] h-[277px] left-[179px] top-[2141px] absolute bg-[#555555] rounded-lg"></div>
-  <div class="Rectangle11 w-[469px] h-[278px] left-[793px] top-[1813px] absolute bg-[#555555] rounded-lg"></div>
-  <div class="MapaDoRn left-[950px] top-[1937px] absolute text-white text-2xl font-normal font-['Inter']">Mapa do RN</div>
-  <div class="PontoTuristico left-[315px] top-[2265px] absolute text-white text-2xl font-normal font-['Inter']">Ponto Turistico</div>
-  <div class="Rectangle34 w-[1240px] h-[828px] left-[112px] top-[1642px] absolute bg-[#d9d9d9] rounded-lg"></div>
-  <div class="OndeNSVamos left-[553px] top-[1675px] absolute text-black text-[42px] font-semibold font-['Inter']">Onde nós vamos</div>
-  <div class="OndeNSVamos left-[553px] top-[1675px] absolute text-black text-[42px] font-semibold font-['Inter']">Onde nós vamos</div>
-  <div class="LoremIpsumDolorSitAmetConsecteturAdipisicingElitVoluptatePossimusNullaDucimusCulpaMagniExpeditaUndeVelitOptioQuibusdamQuiQuisRemVoluptasNumquamLaboreAdipisciIpsaDoloremAtqueEos w-[508px] left-[179px] top-[1813px] absolute text-black text-2xl font-normal font-['Inter']">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate possimus nulla ducimus culpa magni expedita, unde velit optio quibusdam qui quis rem voluptas, numquam labore adipisci ipsa dolorem atque eos.</div>
-  <div class="LoremIpsumDolorSitAmetConsecteturAdipisicingElitVoluptatePossimusNullaDucimusCulpaMagniExpeditaUndeVelitOptioQuibusdamQuiQuisRemVoluptasNumquamLaboreAdipisciIpsaDoloremAtqueEos w-[508px] left-[790px] top-[2141px] absolute text-black text-2xl font-normal font-['Inter']">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate possimus nulla ducimus culpa magni expedita, unde velit optio quibusdam qui quis rem voluptas, numquam labore adipisci ipsa dolorem atque eos.</div>
-  <div class="LoremIpsumDolorSitAmetConsecteturAdipisicingElitVoluptatePossimusNullaDucimusCulpaMagniExpeditaUndeVelitOptioQuibusdamQuiQuisRemVoluptasNumquamLaboreAdipisciIpsaDoloremAtqueEos w-[508px] left-[790px] top-[2141px] absolute text-black text-2xl font-normal font-['Inter']">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate possimus nulla ducimus culpa magni expedita, unde velit optio quibusdam qui quis rem voluptas, numquam labore adipisci ipsa dolorem atque eos.</div>
-  <div class="LoremIpsumDolorSitAmetConsecteturAdipisicingElitVoluptatePossimusNullaDucimusCulpaMagniExpedita w-[508px] left-[179px] top-[2004px] absolute text-black text-2xl font-normal font-['Inter']">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate possimus nulla ducimus culpa magni expedita.</div>
-  <div class="LoremIpsumDolorSitAmetConsecteturAdipisicingElitVoluptatePossimusNullaDucimusCulpaMagniExpedita w-[508px] left-[790px] top-[2331px] absolute text-black text-2xl font-normal font-['Inter']">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate possimus nulla ducimus culpa magni expedita.</div>
-  <div class="Rectangle35 w-[469px] h-[277px] left-[179px] top-[2141px] absolute bg-[#555555] rounded-lg"></div>
-  <div class="Rectangle107 w-[1240px] h-[634px] left-[102px] top-[2716px] absolute bg-[#555555] rounded-lg"></div>
-  <div class="Rectangle36 w-[469px] h-[278px] left-[793px] top-[1813px] absolute bg-[#555555] rounded-lg"></div>
-  <div class="MapaDoRn left-[950px] top-[1937px] absolute text-white text-2xl font-normal font-['Inter']">Mapa do RN</div>
-  <div class="PontoTuristico left-[315px] top-[2265px] absolute text-white text-2xl font-normal font-['Inter']">Ponto Turistico</div>
-  <div class="VejaOQueAsPessoasTOFalando left-[363px] top-[3546px] absolute text-black text-[42px] font-semibold font-['Inter']">Veja o que as pessoas tão falando</div>
-  <div class="NossaGaleria left-[575px] top-[4604px] absolute text-black text-[42px] font-semibold font-['Inter']">Nossa galeria</div>
-  <div class="PerguntasFrequentes left-[468px] top-[7128px] absolute text-black text-[42px] font-semibold font-['Inter']">Perguntas Frequentes</div>
-  <div class="Rectangle12 w-[610px] h-[741px] left-[95px] top-[3654px] absolute bg-[#555555] rounded-lg"></div>
-  <div class="Rectangle13 w-[610px] h-[741px] left-[725px] top-[3654px] absolute bg-[#d9d9d9] rounded-lg"></div>
-  <div class="ImagemDeUmaPessoa left-[263px] top-[3996px] absolute text-white text-2xl font-semibold font-['Inter']">Imagem de uma pessoa</div>
-  <div class="052024 left-[965px] top-[3793px] absolute text-black text-2xl font-normal font-['Inter']">24.05.2024</div>
-  <div class="BrunoSilva left-[921px] top-[3822px] absolute text-black text-[40px] font-semibold font-['Inter']">Bruno Silva</div>
-  <div class="LoremIpsumDolorSitAmetConsecteturAdipisicingElitVoluptatePossimusNullaDucimusCulpaMagniExpedita w-[422px] left-[819px] top-[3996px] absolute text-center text-black text-2xl font-normal font-['Inter']">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate possimus nulla ducimus culpa magni expedita.</div>
-  <div class="7 left-[1013px] top-[4308px] absolute text-center text-black text-2xl font-normal font-['Inter']">1/7</div>
-  <div class="Rectangle14 w-5 h-[21px] left-[987px] top-[4312px] absolute bg-[#555555] rounded-[1px]"></div>
-  <div class="Rectangle15 w-5 h-[21px] left-[1053px] top-[4312px] absolute bg-[#555555] rounded-[1px]"></div>
-  <div class="Rectangle16 w-[519px] h-[338px] left-[95px] top-[4712px] absolute bg-[#555555] rounded-lg"></div>
-  <div class="Rectangle21 w-[519px] h-[691px] left-[825px] top-[5065px] absolute bg-[#555555] rounded-lg"></div>
-  <div class="Rectangle22 w-[715px] h-[338px] left-[95px] top-[5418px] absolute bg-[#555555] rounded-lg"></div>
-  <div class="Rectangle27 w-[898px] h-[97px] left-[271px] top-[7292px] absolute bg-[#555555] rounded-lg"></div>
-  <div class="Rectangle28 w-[898px] h-[97px] left-[271px] top-[7519px] absolute bg-[#555555] rounded-lg"></div>
-  <div class="Rectangle32 w-[898px] h-[97px] left-[271px] top-[7519px] absolute bg-[#555555] rounded-lg"></div>
-  <div class="Rectangle29 w-[898px] h-[97px] left-[278px] top-[7746px] absolute bg-[#555555] rounded-lg"></div>
-  <div class="Rectangle31 w-[214px] h-[97px] left-[962px] top-[7973px] absolute bg-[#555555] rounded-lg"></div>
-  <div class="Rectangle30 w-[666px] h-[97px] left-[278px] top-[7973px] absolute bg-[#d9d9d9] rounded-lg"></div>
-  <div class="Rectangle17 w-[350px] h-[338px] left-[985px] top-[4712px] absolute bg-[#555555] rounded-lg"></div>
-  <div class="Rectangle20 w-[350px] h-[338px] left-[460px] top-[5065px] absolute bg-[#555555] rounded-lg"></div>
-  <div class="Rectangle19 w-[350px] h-[338px] left-[95px] top-[5065px] absolute bg-[#555555] rounded-lg"></div>
-  <div class="Rectangle18 w-[350px] h-[338px] left-[625px] top-[4712px] absolute bg-[#555555] rounded-lg"></div>
-  <div class="PrecisaDeAjudar left-[486px] top-[8327px] absolute text-black text-2xl font-medium font-['Inter']">Precisa de ajudar?</div>
-  <div class="LinksDeNavegaO left-[85px] top-[8327px] absolute text-black text-2xl font-medium font-['Inter']">Links de Navegação</div>
-  <div class="DivulgeSeuNegCio left-[961px] top-[8327px] absolute text-black text-2xl font-medium font-['Inter']">Divulge seu Negócio</div>
-  <div class="00000000000 left-[486px] top-[8395px] absolute text-black text-xl font-normal font-['Inter']">(00) 00000-0000</div>
-  <div class="Home left-[85px] top-[8390px] absolute text-black text-xl font-normal font-['Inter']">Home</div>
-  <div class="CadastrarNegCio left-[961px] top-[8390px] absolute text-black text-xl font-normal font-['Inter']">Cadastrar negócio</div>
-  <div class="StatusDeCadastroDeNegCio left-[961px] top-[8436px] absolute text-black text-xl font-normal font-['Inter']">Status de cadastro de negócio </div>
-  <div class="EmailParaSuporteNegocioGmailCom left-[961px] top-[8477px] absolute text-black text-xl font-normal font-['Inter']">Email para suporte: negocio@gmail.com</div>
-  <div class="TelefoneParaSuporte00000000000 left-[962px] top-[8518px] absolute text-black text-xl font-normal font-['Inter']">Telefone para suporte:  (00) 00000-0000</div>
-  <div class="Sobre left-[85px] top-[8436px] absolute text-black text-xl font-normal font-['Inter']">Sobre</div>
-  <div class="Login left-[85px] top-[8477px] absolute text-black text-xl font-normal font-['Inter']">Login</div>
-  <div class="PainelDeControle left-[85px] top-[8518px] absolute text-black text-xl font-normal font-['Inter']">Painel de Controle</div>
-  <div class="Cnpj00000000000000 left-[486px] top-[8477px] absolute text-black text-xl font-normal font-['Inter']">CNPJ: 00.000.000/0000-00</div>
-  <div class="RuaDesembargadorFerreiraMendes233Sala43EdifCioMasterCenterCentroNorteCuiabMatoGrossoCep78020200 left-[486px] top-[8518px] absolute text-black text-xl font-normal font-['Inter']">Rua Desembargador Ferreira <br/>Mendes, 233 - Sala 43 - Edifício<br/> Master Center Centro Norte - <br/>Cuiabá - Mato Grosso - <br/>CEP: 78020-200</div>
-  <div class="InspirernGmailCom left-[486px] top-[8436px] absolute text-black text-xl font-normal font-['Inter']">inspirern@gmail.com</div>
-  <div class="Ellipse6 w-10 h-10 left-[1122px] top-[8802px] absolute bg-[#d9d9d9] rounded-full"></div>
-  <div class="Ellipse7 w-10 h-10 left-[1186px] top-[8802px] absolute bg-[#d9d9d9] rounded-full"></div>
-  <div class="Ellipse8 w-10 h-10 left-[1250px] top-[8802px] absolute bg-[#d9d9d9] rounded-full"></div>
-  <div class="Ellipse9 w-10 h-10 left-[1314px] top-[8802px] absolute bg-[#d9d9d9] rounded-full"></div>
-  <div class="Logo left-[85px] top-[8807px] absolute text-white text-[32px] font-semibold font-['Inter']">Logo</div>
-  <div class="APerguntaSerExibidaNesteEspaO w-[666px] h-11 left-[383px] top-[7319px] absolute text-center text-white text-4xl font-medium font-['Inter']">A pergunta será exibida neste espaço.</div>
-  <div class="APerguntaSerExibidaNesteEspaO w-[666px] h-11 left-[383px] top-[7546px] absolute text-center text-white text-4xl font-medium font-['Inter']">A pergunta será exibida neste espaço.</div>
-  <div class="APerguntaSerExibidaNesteEspaO w-[666px] h-11 left-[394px] top-[7773px] absolute text-center text-white text-4xl font-medium font-['Inter']">A pergunta será exibida neste espaço.</div>
-  <div class="APerguntaSerExibidaNesteEspaO w-[667px] h-[83px] pl-4 left-[278px] top-[7980px] absolute justify-end items-center inline-flex">
-    <div class="FaASuaPergunta w-[667px] h-[83px] text-black/50 text-4xl font-medium font-['Inter']">Faça sua pergunta</div>
+
+  {{-- Header --}}
+  <header class="relativa h-[90vh] bg-cover bg-center" style="background-image: url('{{ asset('img/brackground-image-header-beach.jpg') }}');">
+    <div class="absolute w-full h-[90vh] bg-black opacity-65"></div>
+    <div class="relative z-10 container mx-auto px-4 h-full">
+      <nav class="flex flex-row items-center justify-between h-20 text-xl text-slate-50">
+        <a href="http://">Logo</a>
+        <ul class="flex flex-row items-center justify-center space-x-4">
+          <li class="hover:text-blue-950 hover:font-semibold hover:underline"><a href="http://">Home</a></li>
+          <li class="hover:text-blue-950 hover:font-semibold hover:underline"><a href="http://">Restaurantes</a></li>
+          <li class="hover:text-blue-950 hover:font-semibold hover:underline"><a href="http://">Pontos Turistícos</a></li>
+          <li class="hover:text-blue-950 hover:font-semibold hover:underline"><a href="http://">Hospedagens</a></li>
+          <li class="hover:text-blue-950 hover:font-semibold hover:underline"><a href="http://">Cidades</a></li>
+        </ul>
+      </nav>
+
+      <div class="mt-40 text-slate-50">
+        <h1 class="text-6xl font-medium mb-4 tracking-wide">Conheça o Paraíso Potiguar!</h1>
+        <p class="text-lg mb-8 tracking-normal">Explore as maravilhas do Rio Grande do Norte! Mergulhe em cultura, aventura e paisagens incríveis.</p>
+
+          <form class="flex flex-row p-8 bg-blue-950 rounded z-20 text-lg text-slate-950 space-x-4 shadow-lg">
+            <input type="text" placeholder="Nome de um negócio" class="w-2/5 p-2 rounded flex-grow shadow-sm">
+            
+            <select placeholder="Categoria" class="w-1/5 p-2 rounded flex-grow shadow-sm">
+              <option value="">Selecione uma categoria</option>
+              <option value="restaurante">Restaurantes</option>
+              <option value="hospedagem">Hospedagens</option>
+              <option value="ponto_turistico">Ponto Turístico</option>
+            </select>
+            
+            <select placeholder="Cidade" class="w-1/5 p-2 rounded flex-grow shadow-sm">
+              <option value="">Selecione uma cidade</option>
+              <option value="natal">Natal</option>
+              <option value="caico">Caicó</option>
+              <option value="mossoro">Mossoró</option>
+            </select>
+
+            <button type="submit" class="bg-blue-700 text-white px-4 py-2 rounded flex-grow shadow-md hover:bg-blue-800 hover:shadow-lg transform hover:scale-105 transition">Pesquisar</button>
+          </form>
+      </div>
+    </div>
+  </header>
+
+  {{-- Main --}}
+  <main class="pt-28 bg-gray-50">
+    <div class="relative z-10 container mx-auto px-4 h-full">
+
+      {{-- Lugares Populares --}}
+      <section class="mb-28">
+        <h2 class="mb-2 text-4xl text-center font-normal tracking-wide">Lugares Populares</h2>
+        <p class="mb-10 text-center">Confira os destinos mais bem avaliados!</p>
+
+        <div class="flex flex-row items-center justify-between">
+          <span class="cursor-pointer text-3xl hover:text-blue-800 transform hover:scale-125 transition duration-300 select-none"><</span>
+          <img src="{{asset('img/lugares-populares-1.jpg')}}" alt="Imagem de duas pessoas tomando banhos em uma praia." class="w-72 h-96 object-cover rounded shadow-lg">
+          <img src="{{asset('img/lugares-populares-2.jpg')}}" alt="Imagem de uma praia com um rocha no fundo." class="w-72 h-96 object-cover rounded shadow-lg">
+          <img src="{{asset('img/lugares-populares-5.jpg')}}" alt="Imagem do morro do careca em Natl-RN." class="w-72 h-96 object-cover rounded shadow-lg">
+          <img src="{{asset('img/lugares-populares-6.jpg')}}" alt="Imagens de placas e o mar de fundo." class="w-72 h-96 object-cover rounded shadow-lg">
+          <span class="cursor-pointer text-3xl hover:text-blue-800 transform hover:scale-125 transition duration-300 select-none">></span>
+        </div>
+      </section>
+
+      {{-- Onde nós vamos? --}}
+      <section class="p-10 mb-28 bg-gray-100 rounded shadow-lg">
+        <h2 class="mb-10 text-4xl text-center font-normal tracking-wide">Onde Nós Vamos</h2>
+
+        <div class="flex flex-row space-x-20">
+          <div class="w-1/2">
+            <p class="mb-4 text-justify indent-6">O Rio Grande do Norte é um destino encantador, repleto de belezas naturais e uma rica história cultural. Com suas praias paradisíacas, dunas douradas e águas cristalinas, o estado se destaca como um dos principais destinos turísticos do Brasil. Cada cidade tem seu charme único, desde a capital Natal até as joias escondidas no interior.</p>
+            
+            <p class="mb-4 text-justify indent-6">A capital, Natal, conhecida como a "Cidade do Sol", oferece uma combinação perfeita entre história e natureza. O turista pode se encantar com o Forte dos Reis Magos, as belezas da Praia de Ponta Negra e os passeios de buggy pelas dunas de Genipabu, que são verdadeiras aventuras no deserto brasileiro.</p>
+            
+            <img src="{{asset('img/natal-setion-where-are-we-go.jpg')}}" alt="Imagem do morro do careca em Natal-RN" class="w-full rounded shadow-md">
+          </div>
+
+          <div class="w-1/2">
+            <img src="{{asset('img/map_setion_where_are_we_go.png')}}" alt="Mapa do Rio Grande do Norte" class="w-full rounded shadow-md mb-4">
+            
+            <p class="mb-4 text-justify indent-6">Além das paisagens deslumbrantes, o Rio Grande do Norte oferece uma experiência completa para quem busca aventura, gastronomia e cultura local. Suas praias são perfeitas para relaxar, enquanto os festivais culturais e a hospitalidade do povo potiguar tornam a visita ainda mais especial. Venha descobrir esse paraíso e se surpreender a cada esquina.</p>
+            
+            <p class="text-justify indent-6">No interior, cidades como Mossoró e Caicó têm muito a oferecer em termos de cultura e tradição. Festas populares, como o São João de Mossoró e a Festa de Sant’Ana em Caicó, são exemplos de como a cultura potiguar é vibrante e autêntica, atraindo visitantes de todos os lugares. Além disso, essas cidades possuem uma gastronomia rica e peculiar, marcada por pratos típicos que refletem a história e a herança local.</p>
+          </div>
+        </div>
+      </section>
+
+
+      {{-- Veja o que as pessoas tão falando --}}
+      <section class=" mb-28 rounded">
+        <h2 class="mb-10 text-4xl text-center font-normal tracking-wide">Veja o que as pessoas tão falando</h2>
+
+        <div class="flex flex-row space-x-8 h-[80vh]">
+          <div class="w-1/2">
+            <img src="{{asset('img/person-setion-comentars.webp')}}" alt="Imagem de uma mulher" class="w-full h-full object-cover rounded">
+          </div>
+
+          <div class="flex flex-col items-center justify-center space-y-2 w-1/2 p-10 bg-gray-100 rounded shadow-lg">
+            <p>24.05.2024</p>
+            <h3 class="mb-10 text-3xl font-medium tracking-wide">Bruna Silva</h3>
+            <span class="w-full h-[0.2rem] rounded bg-zinc-950"></span>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate possimus nulla ducimus culpa magni expedita.</p>
+          </div>
+        </div>
+      </section>
+
+      {{-- Anuncie no INSPIRERN --}}
+      <section class="h-auto p-10 mb-28 bg-gray-100 rounded shadow-lg">
+        <h2 class="mb-6 text-3xl font-normal tracking-wide">Anuncie no INSPIRERN</h2>
+        <p class="mb-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate possimus nulla ducimus culpa magni expedita, unde velit optio quibusdam qui quis rem voluptas, numquam labore adipisci ipsa dolorem atque eos. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate possimus nulla ducimus culpa magni expedita, unde velit optio quibusdam qui quis rem voluptas, numquam labore adipisci ipsa dolorem atque eos.</p>
+
+        <div class="flex flex-wrap gap-4">
+          <a href="http://" class="flex-1 p-5 text-center text-lg rounded bg-gray-200 shadow-lg hover:bg-blue-900 hover:text-white hover:shadow-lg transform hover:scale-105 transition">Restaurante</a>
+          <a href="http://" class="flex-1 p-5 text-center text-lg rounded bg-gray-200 shadow-lg hover:bg-blue-900 hover:text-white hover:shadow-lg transform hover:scale-105 transition">Hospedagem</a>
+          <a href="http://" class="flex-1 p-5 text-center text-lg rounded bg-gray-200 shadow-lg hover:bg-blue-900 hover:text-white hover:shadow-lg transform hover:scale-105 transition">Ponto Turístico</a>
+          <a href="http://" class="flex-1 p-5 text-center text-lg rounded bg-gray-200 shadow-lg hover:bg-blue-900 hover:text-white hover:shadow-lg transform hover:scale-105 transition">Passeio</a>
+        </div>
+      </section>
+
+     {{-- Galeria --}}
+<section class="pb-28">
+  <h2 class="mb-10 text-4xl text-center font-normal tracking-wide">Galeria</h2>
+
+  <div class="h-screen grid grid-cols-3 grid-rows-3 gap-4">
+    <!-- Imagem 1: Ocupa 2 colunas e 1 linha -->
+    <img src="{{asset('img/brackground-image-header-beach.jpg')}}" alt="Imagem de duas pessoas tomando banho em uma praia." class="w-full h-full object-cover rounded shadow-lg row-start-1 row-end-2">
+
+    <!-- Imagens 2 e 3: Ocupam 1 coluna e 1 linha cada -->
+    <img src="{{asset('img/brackground-image-header-beach.jpg')}}" alt="Imagem de uma praia com uma rocha no fundo." class="w-full h-full object-cover rounded shadow-lg row-start-1 row-end-2">
+    <img src="{{asset('img/brackground-image-header-beach.jpg')}}" alt="Imagem do morro do careca em Natal-RN." class="w-full h-full object-cover rounded shadow-lg row-start-1 row-end-2">
+
+    <!-- Imagens 4 e 5: Ocupam 1 coluna e 1 linha cada -->
+    <img src="{{asset('img/brackground-image-header-beach.jpg')}}" alt="Imagens de placas e o mar de fundo." class="w-full h-full object-cover rounded shadow-lg row-start-2 row-end-3">
+    <img src="{{asset('img/brackground-image-header-beach.jpg')}}" alt="Imagens de placas e o mar de fundo." class="w-full h-full object-cover rounded shadow-lg row-start-2 row-end-3">
+
+    <!-- Imagem 6: Ocupa 2 linhas e 1 coluna -->
+    <img src="{{asset('img/brackground-image-header-beach.jpg')}}" alt="Imagens de placas e o mar de fundo." class="w-full h-full object-cover rounded shadow-lg row-start-2 row-end-4">
+
+    <!-- Imagem 7: Ocupa 1 coluna e 1 linha -->
+    <img src="{{asset('img/brackground-image-header-beach.jpg')}}" alt="Imagens de placas e o mar de fundo." class="w-full h-full object-cover rounded shadow-lg row-start-3 row-end-4 col-start-1 col-end-3">
   </div>
-  <div class="APerguntaSerExibidaNesteEspaO w-[667px] h-[83px] pl-4 left-[278px] top-[7980px] absolute justify-end items-center inline-flex">
-    <div class="FaASuaPergunta w-[667px] h-[83px] text-black/50 text-4xl font-medium font-['Inter']">Faça sua pergunta</div>
-  </div>
-  <div class="MapaDoRn w-[230px] h-[58px] left-[853px] top-[6447px] absolute text-white text-2xl font-normal font-['Inter']">Mapa do RN</div>
-  <div class="NaveguePeloMapa left-[530px] top-[5945px] absolute text-black text-[42px] font-semibold font-['Inter']">Navegue pelo mapa</div>
-  <div class="Rectangle104 w-[410px] h-[273px] left-[106px] top-[6053px] absolute bg-[#d0d0d0] rounded-lg"></div>
-  <div class="ImagemDoGoogleMaps w-[372px] h-[86px] left-[172px] top-[6462px] absolute text-white text-2xl font-normal font-['Inter']">Imagem do google maps</div>
-  <div class="Mapa w-[143px] h-[68px] left-[258px] top-[6169px] absolute text-[#1a1818] text-[32px] font-normal font-['Inter']">Mapa</div>
-  <div class="Mapa w-[143px] h-[68px] left-[888px] top-[6442px] absolute text-[#1a1818] text-4xl font-normal font-['Inter']">Mapa</div>
-  <div class="ImagemDoGoogleMaps w-[372px] h-[86px] left-[172px] top-[6749px] absolute text-white text-2xl font-normal font-['Inter']">Imagem do google maps</div>
-  <div class=" w-[54px] h-[49px] left-[58px] top-[1189px] absolute text-black text-[40px] font-normal font-['Inter']"><</div>
-  <div class=" left-[1358px] top-[1190px] absolute text-black text-[40px] font-normal font-['Inter']">></div>
-  <div class="Rectangle108 w-[1157px] h-[522px] left-[143px] top-[2772px] absolute bg-[#777777] rounded-lg"></div>
-  <div class="AnuncieNoInspirern left-[179px] top-[2795px] absolute text-white text-[42px] font-semibold font-['Inter']">Anuncie no INSPIRERN</div>
-  <div class="LoremIpsumDolorSitAmetConsecteturAdipisicingElitVoluptatePossimusNullaDucimusCulpaMagniExpeditaUndeVelitOptioQuibusdamQuiQuisRemVoluptasNumquamLaboreAdipisciIpsaDoloremAtqueEosLoremIpsumDolorSitAmetConsecteturAdipisicingElitVoluptatePossimusNullaDucimusCulpaMagniExpeditaUndeVelitOptioQuibusdamQuiQuisRemVoluptasNumquamLaboreAdipisciIpsaDoloremAtqueEos w-[1085px] left-[179px] top-[2865px] absolute text-white text-2xl font-normal font-['Inter']">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate possimus nulla ducimus culpa magni expedita, unde velit optio quibusdam qui quis rem voluptas, numquam labore adipisci ipsa dolorem atque eos.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate possimus nulla ducimus culpa magni expedita, unde velit optio quibusdam qui quis rem voluptas, numquam labore adipisci ipsa dolorem atque eos.</div>
-  <div class="Rectangle109 w-[247px] h-[127px] left-[165px] top-[3077px] absolute bg-white rounded-lg"></div>
-  <div class="Rectangle110 w-[247px] h-[127px] left-[453px] top-[3077px] absolute bg-white rounded-lg"></div>
-  <div class="Rectangle111 w-[247px] h-[127px] left-[741px] top-[3077px] absolute bg-white rounded-lg"></div>
-  <div class="Rectangle112 w-[247px] h-[127px] left-[1029px] top-[3077px] absolute bg-white rounded-lg"></div>
-  <div class="Rectangle113 w-[207px] h-[72px] left-[1094px] top-[443px] absolute bg-[#555555] rounded-lg"></div>
-  <div class="APerguntaSerExibidaNesteEspaO w-[543px] h-[72px] pl-[13.03px] left-[137px] top-[443px] absolute bg-[#ececec] rounded-lg justify-end items-center inline-flex">
-    <div class="FaASuaPergunta w-[543px] h-[72px] text-black/50 text-3xl font-medium font-['Inter']">Nome de um negócio</div>
-  </div>
-  <div class="APerguntaSerExibidaNesteEspaO w-[209px] h-[72px] pl-[5.01px] left-[692px] top-[443px] absolute bg-[#ececec] rounded-lg justify-end items-center inline-flex">
-    <div class="FaASuaPergunta w-[209px] h-[72px] text-black/50 text-3xl font-medium font-['Inter']">Categoria v</div>
-  </div>
-  <div class="APerguntaSerExibidaNesteEspaO w-[166px] h-[72px] pl-1 left-[914px] top-[443px] absolute bg-[#ececec] rounded-lg justify-end items-center inline-flex">
-    <div class="FaASuaPergunta w-[166px] h-[72px] text-black/50 text-3xl font-medium font-['Inter']">Cidade v</div>
-  </div>
-  <div class="Pesquisar w-[181px] h-[72px] left-[1120px] top-[443px] absolute text-[#ebebeb] text-3xl font-medium font-['Inter']">Pesquisar</div>
-</div>
+</section>
+
+
+    </div>
+  </main>
+
+  <footer class="bg-gray-900 text-white py-10">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Sobre nós -->
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Sobre Nós</h3>
+        <p class="text-gray-400">O INSPIRERN é sua plataforma de referência para explorar os melhores destinos, restaurantes e hospedagens no Rio Grande do Norte. Descubra o que torna o nosso estado um dos mais encantadores do Brasil.</p>
+      </div>
+
+      <!-- Links rápidos -->
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Links Rápidos</h3>
+        <ul class="text-gray-400 space-y-2">
+          <li><a href="#" class="hover:text-white transition">Início</a></li>
+          <li><a href="#" class="hover:text-white transition">Destinos</a></li>
+          <li><a href="#" class="hover:text-white transition">Restaurantes</a></li>
+          <li><a href="#" class="hover:text-white transition">Hospedagem</a></li>
+        </ul>
+      </div>
+
+      <!-- Ajudar -->
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Precisa de ajudar?</h3>
+        <ul class="text-gray-400 space-y-2">
+          <li><p>(00) 00000-0000</p></li>
+          <li><p>inspirern@gmail.com</p></li>
+          <li><p>CNPJ: 00.000.000/0000-00</p></li>
+          <li><p>Rua Desembargador Ferreira Mendes,<br>233 - Sala 43 - Edifício Master Center<br>Centro Norte - Cuiabá - Mato Grosso - <br>CEP: 78020-200</p></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-10 text-center text-gray-600">
+      <p>&copy; 2024 INSPIRERN. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
