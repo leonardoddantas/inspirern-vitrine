@@ -19,11 +19,11 @@
       <nav class="flex flex-row items-center justify-between h-20 text-xl text-slate-50">
         <a href="http://">Logo</a>
         <ul class="flex flex-row items-center justify-center space-x-4">
-          <li class="hover:text-blue-950 hover:font-semibold hover:underline"><a href="http://">Home</a></li>
-          <li class="hover:text-blue-950 hover:font-semibold hover:underline"><a href="http://">Restaurantes</a></li>
-          <li class="hover:text-blue-950 hover:font-semibold hover:underline"><a href="http://">Pontos Turistícos</a></li>
-          <li class="hover:text-blue-950 hover:font-semibold hover:underline"><a href="http://">Hospedagens</a></li>
-          <li class="hover:text-blue-950 hover:font-semibold hover:underline"><a href="http://">Cidades</a></li>
+          <li class="hover:text-blue-950 transition"><a href="http://">Home</a></li>
+          <li class="hover:text-blue-950 hover:font-semibold transition"><a href="http://">Restaurantes</a></li>
+          <li class="hover:text-blue-950 hover:font-semibold transition"><a href="http://">Pontos Turistícos</a></li>
+          <li class="hover:text-blue-950 hover:font-semibold transition"><a href="http://">Hospedagens</a></li>
+          <li class="hover:text-blue-950 hover:font-semibold transition"><a href="http://">Cidades</a></li>
         </ul>
       </nav>
 
@@ -64,12 +64,12 @@
         <p class="mb-10 text-center">Confira os destinos mais bem avaliados!</p>
 
         <div class="flex flex-row items-center justify-between">
-          <span class="cursor-pointer text-3xl hover:text-blue-800 transform hover:scale-125 transition duration-300 select-none"><</span>
+          <span class="cursor-pointer py-1 px-2 text-lg rounded shadow-sm hover:bg-blue-900 hover:text-white hover:shadow-lg transform hover:scale-105 transition"><</span>
           <img src="{{asset('img/lugares-populares-1.jpg')}}" alt="Imagem de duas pessoas tomando banhos em uma praia." class="w-72 h-96 object-cover rounded shadow-lg">
           <img src="{{asset('img/lugares-populares-2.jpg')}}" alt="Imagem de uma praia com um rocha no fundo." class="w-72 h-96 object-cover rounded shadow-lg">
           <img src="{{asset('img/lugares-populares-5.jpg')}}" alt="Imagem do morro do careca em Natl-RN." class="w-72 h-96 object-cover rounded shadow-lg">
           <img src="{{asset('img/lugares-populares-6.jpg')}}" alt="Imagens de placas e o mar de fundo." class="w-72 h-96 object-cover rounded shadow-lg">
-          <span class="cursor-pointer text-3xl hover:text-blue-800 transform hover:scale-125 transition duration-300 select-none">></span>
+          <span class="cursor-pointer py-1 px-2 text-lg rounded shadow-sm hover:bg-blue-900 hover:text-white hover:shadow-lg transform hover:scale-105 transition">></span>
         </div>
       </section>
 
@@ -96,9 +96,8 @@
         </div>
       </section>
 
-
       {{-- Veja o que as pessoas tão falando --}}
-      <section class=" mb-28 rounded">
+      <section class="mb-28 rounded">
         <h2 class="mb-10 text-4xl text-center font-normal tracking-wide">Veja o que as pessoas tão falando</h2>
 
         <div class="flex flex-row space-x-8 h-[80vh]">
@@ -106,14 +105,25 @@
             <img src="{{asset('img/person-setion-comentars.webp')}}" alt="Imagem de uma mulher" class="w-full h-full object-cover rounded">
           </div>
 
-          <div class="flex flex-col items-center justify-center space-y-2 w-1/2 p-10 bg-gray-100 rounded shadow-lg">
-            <p>24.05.2024</p>
-            <h3 class="mb-10 text-3xl font-medium tracking-wide">Bruna Silva</h3>
-            <span class="w-full h-[0.2rem] rounded bg-zinc-950"></span>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate possimus nulla ducimus culpa magni expedita.</p>
+          <div class="flex flex-col justify-between w-1/2 p-10 bg-gray-100 rounded shadow-lg">
+
+            <div class="flex flex-col items-center justify-center flex-grow">
+              <p>24.05.2024</p>
+              <h3 class="mb-14 text-3xl font-medium tracking-wide">Bruna Silva</h3>
+              <span class="w-3/4 h-[0.099rem] mb-14 rounded bg-zinc-950"></span>
+              <p class="w-3/4 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate possimus nulla ducimus culpa magni expedita.</p>
+            </div>
+            
+            <div class="flex flex-row items-center justify-center space-x-2">
+              <span class="py-1 px-2 text-lg rounded shadow-lg cursor-pointer hover:bg-blue-900 hover:text-white hover:shadow-lg transform hover:scale-105 transition"><</span>
+              <p>1/7</p>
+              <span class="py-1 px-2 text-lg rounded shadow-lg cursor-pointer hover:bg-blue-900 hover:text-white hover:shadow-lg transform hover:scale-105 transition">></span>
+            </div>
+
           </div>
         </div>
       </section>
+
 
       {{-- Anuncie no INSPIRERN --}}
       <section class="h-auto p-10 mb-28 bg-gray-100 rounded shadow-lg">
@@ -128,29 +138,25 @@
         </div>
       </section>
 
-     {{-- Galeria --}}
-<section class="pb-28">
-  <h2 class="mb-10 text-4xl text-center font-normal tracking-wide">Galeria</h2>
+      {{-- Galeria --}}
+      <section class="pb-28">
+        <h2 class="mb-10 text-4xl text-center font-normal tracking-wide">Galeria</h2>
 
-  <div class="h-screen grid grid-cols-3 grid-rows-3 gap-4">
-    <!-- Imagem 1: Ocupa 2 colunas e 1 linha -->
-    <img src="{{asset('img/brackground-image-header-beach.jpg')}}" alt="Imagem de duas pessoas tomando banho em uma praia." class="w-full h-full object-cover rounded shadow-lg row-start-1 row-end-2">
+        <div class="h-screen grid grid-cols-3 grid-rows-3 gap-4">
+        
+          <img src="{{asset('img/brackground-image-header-beach.jpg')}}" alt="Imagem de duas pessoas tomando banho em uma praia." class="w-full h-full object-cover rounded shadow-lg row-start-1 row-end-2">
 
-    <!-- Imagens 2 e 3: Ocupam 1 coluna e 1 linha cada -->
-    <img src="{{asset('img/brackground-image-header-beach.jpg')}}" alt="Imagem de uma praia com uma rocha no fundo." class="w-full h-full object-cover rounded shadow-lg row-start-1 row-end-2">
-    <img src="{{asset('img/brackground-image-header-beach.jpg')}}" alt="Imagem do morro do careca em Natal-RN." class="w-full h-full object-cover rounded shadow-lg row-start-1 row-end-2">
+          <img src="{{asset('img/brackground-image-header-beach.jpg')}}" alt="Imagem de uma praia com uma rocha no fundo." class="w-full h-full object-cover rounded shadow-lg row-start-1 row-end-2">
+          <img src="{{asset('img/brackground-image-header-beach.jpg')}}" alt="Imagem do morro do careca em Natal-RN." class="w-full h-full object-cover rounded shadow-lg row-start-1 row-end-2">
 
-    <!-- Imagens 4 e 5: Ocupam 1 coluna e 1 linha cada -->
-    <img src="{{asset('img/brackground-image-header-beach.jpg')}}" alt="Imagens de placas e o mar de fundo." class="w-full h-full object-cover rounded shadow-lg row-start-2 row-end-3">
-    <img src="{{asset('img/brackground-image-header-beach.jpg')}}" alt="Imagens de placas e o mar de fundo." class="w-full h-full object-cover rounded shadow-lg row-start-2 row-end-3">
+          <img src="{{asset('img/brackground-image-header-beach.jpg')}}" alt="Imagens de placas e o mar de fundo." class="w-full h-full object-cover rounded shadow-lg row-start-2 row-end-3">
+          <img src="{{asset('img/brackground-image-header-beach.jpg')}}" alt="Imagens de placas e o mar de fundo." class="w-full h-full object-cover rounded shadow-lg row-start-2 row-end-3">
 
-    <!-- Imagem 6: Ocupa 2 linhas e 1 coluna -->
-    <img src="{{asset('img/brackground-image-header-beach.jpg')}}" alt="Imagens de placas e o mar de fundo." class="w-full h-full object-cover rounded shadow-lg row-start-2 row-end-4">
+          <img src="{{asset('img/brackground-image-header-beach.jpg')}}" alt="Imagens de placas e o mar de fundo." class="w-full h-full object-cover rounded shadow-lg row-start-2 row-end-4">
 
-    <!-- Imagem 7: Ocupa 1 coluna e 1 linha -->
-    <img src="{{asset('img/brackground-image-header-beach.jpg')}}" alt="Imagens de placas e o mar de fundo." class="w-full h-full object-cover rounded shadow-lg row-start-3 row-end-4 col-start-1 col-end-3">
-  </div>
-</section>
+          <img src="{{asset('img/brackground-image-header-beach.jpg')}}" alt="Imagens de placas e o mar de fundo." class="w-full h-full object-cover rounded shadow-lg row-start-3 row-end-4 col-start-1 col-end-3">
+        </div>
+      </section>
 
 
     </div>
@@ -164,17 +170,6 @@
         <p class="text-gray-400">O INSPIRERN é sua plataforma de referência para explorar os melhores destinos, restaurantes e hospedagens no Rio Grande do Norte. Descubra o que torna o nosso estado um dos mais encantadores do Brasil.</p>
       </div>
 
-      <!-- Links rápidos -->
-      <div>
-        <h3 class="text-xl font-semibold mb-4">Links Rápidos</h3>
-        <ul class="text-gray-400 space-y-2">
-          <li><a href="#" class="hover:text-white transition">Início</a></li>
-          <li><a href="#" class="hover:text-white transition">Destinos</a></li>
-          <li><a href="#" class="hover:text-white transition">Restaurantes</a></li>
-          <li><a href="#" class="hover:text-white transition">Hospedagem</a></li>
-        </ul>
-      </div>
-
       <!-- Ajudar -->
       <div>
         <h3 class="text-xl font-semibold mb-4">Precisa de ajudar?</h3>
@@ -183,6 +178,17 @@
           <li><p>inspirern@gmail.com</p></li>
           <li><p>CNPJ: 00.000.000/0000-00</p></li>
           <li><p>Rua Desembargador Ferreira Mendes,<br>233 - Sala 43 - Edifício Master Center<br>Centro Norte - Cuiabá - Mato Grosso - <br>CEP: 78020-200</p></li>
+        </ul>
+      </div>
+
+      <!-- Links rápidos -->
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Links Rápidos</h3>
+        <ul class="text-gray-400 space-y-2">
+          <li><a href="#" class="hover:text-white transition">Início</a></li>
+          <li><a href="#" class="hover:text-white transition">Destinos</a></li>
+          <li><a href="#" class="hover:text-white transition">Restaurantes</a></li>
+          <li><a href="#" class="hover:text-white transition">Hospedagem</a></li>
         </ul>
       </div>
     </div>
