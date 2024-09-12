@@ -31,25 +31,24 @@
         <h1 class="text-6xl font-medium mb-4 tracking-wide">Conheça o Paraíso Potiguar!</h1>
         <p class="text-lg mb-8 tracking-normal">Explore as maravilhas do Rio Grande do Norte! Mergulhe em cultura, aventura e paisagens incríveis.</p>
 
-          <form class="flex flex-row p-8 bg-blue-950 rounded z-20 text-lg text-slate-950 space-x-4 shadow-lg">
-            <input type="text" placeholder="Nome de um negócio" class="w-2/5 p-2 rounded flex-grow shadow-sm">
-            
-            <select placeholder="Categoria" class="w-1/5 p-2 rounded flex-grow shadow-sm">
-              <option value="">Selecione uma categoria</option>
-              <option value="restaurante">Restaurantes</option>
-              <option value="hospedagem">Hospedagens</option>
-              <option value="ponto_turistico">Ponto Turístico</option>
-            </select>
-            
-            <select placeholder="Cidade" class="w-1/5 p-2 rounded flex-grow shadow-sm">
-              <option value="">Selecione uma cidade</option>
-              <option value="natal">Natal</option>
-              <option value="caico">Caicó</option>
-              <option value="mossoro">Mossoró</option>
-            </select>
+        <form class="flex flex-row p-8 bg-blue-950 rounded z-20 text-lg text-slate-950 space-x-4 shadow-lg relative">
+          <input type="text" placeholder="Nome de um negócio" class="w-2/5 p-2 rounded flex-grow shadow-sm">
 
-            <button type="submit" class="bg-blue-700 text-white px-4 py-2 rounded flex-grow shadow-md hover:bg-blue-800 hover:shadow-lg transform hover:scale-105 transition">Pesquisar</button>
-          </form>
+          <select placeholder="Categoria" class="w-1/5 p-2 rounded flex-grow shadow-sm">
+            <option value="">Selecione uma categoria</option>
+            <option value="restaurante">Restaurantes</option>
+            <option value="hospedagem">Hospedagens</option>
+            <option value="ponto_turistico">Ponto Turístico</option>
+          </select>
+
+          <div class="relative w-1/5">
+            <input type="text" id="cityInput" class="w-full p-2 rounded shadow-sm" placeholder="Digite a cidade" onkeyup="autocompleteCity()">
+            
+            <ul id="citySuggestions" class="absolute w-full bg-white shadow-lg rounded mt-1 max-h-48 overflow-y-auto hidden z-50 text-black"></ul>
+          </div>
+
+          <button type="submit" class="bg-blue-700 text-white px-4 py-2 rounded flex-grow shadow-md hover:bg-blue-800 hover:shadow-lg transform hover:scale-105 transition">Pesquisar</button>
+        </form>
       </div>
     </div>
   </header>
@@ -73,27 +72,35 @@
         </div>
       </section>
 
-      {{-- Onde nós vamos? --}}
-      <section class="p-10 mb-28 bg-gray-100 rounded shadow-lg">
-        <h2 class="mb-10 text-4xl text-center font-normal tracking-wide">Onde Nós Vamos</h2>
+      <!-- Onde Nós Vamos -->
+      <section class="py-16 mb-28 bg-gray-100-100 rounded shadow-md">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-4xl font-bold mb-8">Onde Nós Vamos</h2>
 
-        <div class="flex flex-row space-x-20">
-          <div class="w-1/2">
-            <p class="mb-4 text-justify indent-6">O Rio Grande do Norte é um destino encantador, repleto de belezas naturais e uma rica história cultural. Com suas praias paradisíacas, dunas douradas e águas cristalinas, o estado se destaca como um dos principais destinos turísticos do Brasil. Cada cidade tem seu charme único, desde a capital Natal até as joias escondidas no interior.</p>
-            
-            <p class="mb-4 text-justify indent-6">A capital, Natal, conhecida como a "Cidade do Sol", oferece uma combinação perfeita entre história e natureza. O turista pode se encantar com o Forte dos Reis Magos, as belezas da Praia de Ponta Negra e os passeios de buggy pelas dunas de Genipabu, que são verdadeiras aventuras no deserto brasileiro.</p>
-            
-            <img src="{{asset('img/natal-setion-where-are-we-go.jpg')}}" alt="Imagem do morro do careca em Natal-RN" class="w-full rounded shadow-md">
+        <p class="text-lg leading-relaxed mb-12 max-w-3xl mx-auto text-gray-700">
+          O Rio Grande do Norte é um estado único, conhecido por sua diversidade natural, cultural e gastronômica. 
+          Este site reúne o melhor que o estado tem a oferecer: desde suas praias e dunas até as tradições culturais 
+          e a hospitalidade do povo. Aqui, você encontrará dicas, roteiros e recomendações para viver uma experiência 
+          completa no RN. Nosso objetivo é mostrar o que o Rio Grande do Norte tem de mais especial, tanto para turistas quanto para os próprios potiguares.
+        </p>
+
+        <div class="flex flex-wrap justify-center gap-8">
+          <div class="w-80 p-4 bg-gray-200 rounded-lg shadow-md">
+            <img src="{{asset('img/map_setion_where_are_we_go.png')}}" alt="Mapa do Rio Grande do Norte" class="w-full h-48 object-cover rounded-md mb-4">
+            <p class="text-md text-gray-600">Conheça o Rio Grande do Norte, um lugar de riquezas naturais e culturais.</p>
           </div>
 
-          <div class="w-1/2">
-            <img src="{{asset('img/map_setion_where_are_we_go.png')}}" alt="Mapa do Rio Grande do Norte" class="w-full rounded shadow-md mb-4">
-            
-            <p class="mb-4 text-justify indent-6">Além das paisagens deslumbrantes, o Rio Grande do Norte oferece uma experiência completa para quem busca aventura, gastronomia e cultura local. Suas praias são perfeitas para relaxar, enquanto os festivais culturais e a hospitalidade do povo potiguar tornam a visita ainda mais especial. Venha descobrir esse paraíso e se surpreender a cada esquina.</p>
-            
-            <p class="text-justify indent-6">No interior, cidades como Mossoró e Caicó têm muito a oferecer em termos de cultura e tradição. Festas populares, como o São João de Mossoró e a Festa de Sant’Ana em Caicó, são exemplos de como a cultura potiguar é vibrante e autêntica, atraindo visitantes de todos os lugares. Além disso, essas cidades possuem uma gastronomia rica e peculiar, marcada por pratos típicos que refletem a história e a herança local.</p>
+          <div class="w-80 p-4 bg-gray-200 rounded-lg shadow-md">
+            <img src="{{asset('img/cultura.jpg')}}" alt="Cultura do RN" class="w-full h-48 object-cover rounded-md mb-4">
+            <p class="text-md text-gray-600">Descubra as tradições, festas e a vibrante cultura potiguar.</p>
+          </div>
+
+          <div class="w-80 p-4 bg-gray-200 rounded-lg shadow-md">
+            <img src="{{asset('img/gastronomia.jpg')}}" alt="Gastronomia do RN" class="w-full h-48 object-cover rounded-md mb-4">
+            <p class="text-md text-gray-600">Explore a gastronomia local, repleta de sabores autênticos e únicos.</p>
           </div>
         </div>
+      </div>
       </section>
 
       {{-- Veja o que as pessoas tão falando --}}
@@ -131,15 +138,15 @@
         <p class="mb-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate possimus nulla ducimus culpa magni expedita, unde velit optio quibusdam qui quis rem voluptas, numquam labore adipisci ipsa dolorem atque eos. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate possimus nulla ducimus culpa magni expedita, unde velit optio quibusdam qui quis rem voluptas, numquam labore adipisci ipsa dolorem atque eos.</p>
 
         <div class="flex flex-wrap gap-4">
-          <a href="http://" class="flex-1 p-5 text-center text-lg rounded bg-gray-200 shadow-lg hover:bg-blue-900 hover:text-white hover:shadow-lg transform hover:scale-105 transition">Restaurante</a>
-          <a href="http://" class="flex-1 p-5 text-center text-lg rounded bg-gray-200 shadow-lg hover:bg-blue-900 hover:text-white hover:shadow-lg transform hover:scale-105 transition">Hospedagem</a>
-          <a href="http://" class="flex-1 p-5 text-center text-lg rounded bg-gray-200 shadow-lg hover:bg-blue-900 hover:text-white hover:shadow-lg transform hover:scale-105 transition">Ponto Turístico</a>
-          <a href="http://" class="flex-1 p-5 text-center text-lg rounded bg-gray-200 shadow-lg hover:bg-blue-900 hover:text-white hover:shadow-lg transform hover:scale-105 transition">Passeio</a>
+          <a href="http://127.0.0.1:8001/business/create" class="flex-1 p-5 text-center text-lg rounded bg-gray-200 shadow-lg hover:bg-blue-900 hover:text-white hover:shadow-lg transform hover:scale-105 transition">Restaurante</a>
+          <a href="http://127.0.0.1:8001/business/create" class="flex-1 p-5 text-center text-lg rounded bg-gray-200 shadow-lg hover:bg-blue-900 hover:text-white hover:shadow-lg transform hover:scale-105 transition">Hospedagem</a>
+          <a href="http://127.0.0.1:8001/business/create" class="flex-1 p-5 text-center text-lg rounded bg-gray-200 shadow-lg hover:bg-blue-900 hover:text-white hover:shadow-lg transform hover:scale-105 transition">Ponto Turístico</a>
+          <a href="http://127.0.0.1:8001/business/create" class="flex-1 p-5 text-center text-lg rounded bg-gray-200 shadow-lg hover:bg-blue-900 hover:text-white hover:shadow-lg transform hover:scale-105 transition">Passeio</a>
         </div>
       </section>
 
       {{-- Galeria --}}
-      <section class="pb-28">
+      <section class="mb-28">
         <h2 class="mb-10 text-4xl text-center font-normal tracking-wide">Galeria</h2>
 
         <div class="h-screen grid grid-cols-3 grid-rows-3 gap-4">
@@ -157,8 +164,99 @@
           <img src="{{asset('img/brackground-image-header-beach.jpg')}}" alt="Imagens de placas e o mar de fundo." class="w-full h-full object-cover rounded shadow-lg row-start-3 row-end-4 col-start-1 col-end-3">
         </div>
       </section>
+      
+      <!-- Seção de Histórias de Viagens e Testemunhos -->
+      <section id="testimonials" class="mb-28 py-16 bg-gray-100 rounded shadow-md">
+          <div class="container mx-auto px-6">
+              <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Histórias de Viagens e Testemunhos</h2>
 
+              <div class="relative">
+                  <div class="testimonial-carousel flex overflow-hidden relative">
+                      <div class="testimonial-slide flex items-center justify-center w-full px-4">
+                          <div class="max-w-sm bg-white shadow-lg rounded-lg p-4 text-center">
+                              <img src="{{asset('img/person.webp')}}" alt="Usuário 1" class="w-20 h-20 object-cover rounded-full mx-auto mb-4 border-4 border-indigo-500">
+                              <p class="text-lg italic mb-4">"Minha viagem ao Rio Grande do Norte foi absolutamente inesquecível! Cada momento foi mágico."</p>
+                              <h3 class="text-xl font-semibold">Nome do Usuário</h3>
+                          </div>
+                      </div>
 
+                      <div class="testimonial-slide flex items-center justify-center w-full px-4 hidden">
+                          <div class="max-w-sm bg-white shadow-lg rounded-lg p-4 text-center">
+                              <img src="{{asset('img/person.webp')}}" alt="Usuário 2" class="w-20 h-20 object-cover rounded-full mx-auto mb-4 border-4 border-indigo-500">
+                              <p class="text-lg italic mb-4">"Explorar as praias e conhecer a cultura local foi uma experiência única. Voltarei com certeza!"</p>
+                              <h3 class="text-xl font-semibold">Nome do Usuário 2</h3>
+                          </div>
+                      </div>
+
+                      <div class="testimonial-slide flex items-center justify-center w-full px-4 hidden">
+                          <div class="max-w-sm bg-white shadow-lg rounded-lg p-4 text-center">
+                              <img src="{{asset('img/person.webp')}}" alt="Usuário 3" class="w-20 h-20 object-cover rounded-full mx-auto mb-4 border-4 border-indigo-500">
+                              <p class="text-lg italic mb-4">"Paisagens deslumbrantes e ótimos serviços. Não vejo a hora de planejar minha próxima viagem!"</p>
+                              <h3 class="text-xl font-semibold">Nome do Usuário 3</h3>
+                          </div>
+                      </div>
+                  </div>
+
+                  <button class="prev absolute top-1/2 left-0 transform -translate-y-1/2 rounded shadow-md hover:bg-blue-900 hover:text-white p-3 opacity-75 hover:opacity-100">
+                    <
+                  </button>
+                  <button class="next absolute top-1/2 right-0 transform -translate-y-1/2 rounded shadow-md hover:bg-blue-900 hover:text-white p-3 opacity-75 hover:opacity-100">
+                    >
+                  </button>
+              </div>
+          </div>
+      </section>  
+
+      <!-- Perguntas Frequentes -->
+      <section class="pb-28">
+        <h2 class="text-4xl text-center font-normal tracking-wide mb-10">Perguntas Frequentes</h2>
+
+        <div class="w-3/4 mx-auto">
+          <!-- Pergunta 1 -->
+          <div class="mb-4 border-b border-gray-300 pb-4">
+            <h3 class="text-xl font-semibold cursor-pointer" onclick="toggleAnswer(1)">
+              O que é a plataforma?
+              <span id="icon-1" class="float-right">+</span>
+            </h3>
+            <p id="answer-1" class="hidden mt-2 text-gray-700">
+              A nossa plataforma é dedicada à divulgação de pontos turísticos, hospedagens e restaurantes do Rio Grande do Norte, ajudando turistas a explorar as maravilhas locais.
+            </p>
+          </div>
+
+          <!-- Pergunta 2 -->
+          <div class="mb-4 border-b border-gray-300 pb-4">
+            <h3 class="text-xl font-semibold cursor-pointer" onclick="toggleAnswer(2)">
+              Como posso cadastrar meu negócio?
+              <span id="icon-2" class="float-right">+</span>
+            </h3>
+            <p id="answer-2" class="hidden mt-2 text-gray-700">
+              Para cadastrar seu negócio, basta acessar a seção "Cadastro" em nosso site e preencher as informações necessárias. Após a revisão, seu negócio será publicado na plataforma.
+            </p>
+          </div>
+
+          <!-- Pergunta 3 -->
+          <div class="mb-4 border-b border-gray-300 pb-4">
+            <h3 class="text-xl font-semibold cursor-pointer" onclick="toggleAnswer(3)">
+              É possível criar um roteiro personalizado?
+              <span id="icon-3" class="float-right">+</span>
+            </h3>
+            <p id="answer-3" class="hidden mt-2 text-gray-700">
+              Sim, você pode criar seu próprio roteiro personalizado adicionando os locais de interesse diretamente na plataforma, e nós ajudamos você a organizar sua viagem!
+            </p>
+          </div>
+
+          <!-- Pergunta 4 -->
+          <div class="mb-4 border-b border-gray-300 pb-4">
+            <h3 class="text-xl font-semibold cursor-pointer" onclick="toggleAnswer(4)">
+              Quais tipos de hospedagens posso encontrar?
+              <span id="icon-4" class="float-right">+</span>
+            </h3>
+            <p id="answer-4" class="hidden mt-2 text-gray-700">
+              Você pode encontrar uma variedade de hospedagens, como casas, apartamentos, hotéis e pousadas, com filtros de preço e avaliação para facilitar sua escolha.
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   </main>
 
@@ -198,5 +296,70 @@
     </div>
   </footer>
 
+  <!-- Script para alternar respostas -->
+  <script>
+    function toggleAnswer(id) {
+      var answer = document.getElementById('answer-' + id);
+      var icon = document.getElementById('icon-' + id);
+      
+      if (answer.classList.contains('hidden')) {
+        answer.classList.remove('hidden');
+        icon.innerText = '-';
+      } else {
+        answer.classList.add('hidden');
+        icon.innerText = '+';
+      }
+    }
+
+    let currentSlideIndex = 0;
+    const slides = document.querySelectorAll('.testimonial-slide');
+    const totalSlides = slides.length;
+
+    document.querySelector('.next').addEventListener('click', () => {
+        slides[currentSlideIndex].classList.add('hidden');
+        currentSlideIndex = (currentSlideIndex + 1) % totalSlides;
+        slides[currentSlideIndex].classList.remove('hidden');
+    });
+
+    document.querySelector('.prev').addEventListener('click', () => {
+        slides[currentSlideIndex].classList.add('hidden');
+        currentSlideIndex = (currentSlideIndex - 1 + totalSlides) % totalSlides;
+        slides[currentSlideIndex].classList.remove('hidden');
+    });
+  </script>
+
+  {{-- script para filtrar cidades --}}
+  <script>
+    const cities = ["Natal", "Mossoró", "Caicó", "Tibau do Sul", "Parnamirim", "Macau", "Pau dos Ferros", "Currais Novos", "Touros", "São Gonçalo do Amarante", "Santa Cruz", "Assú"];
+    
+    function autocompleteCity() {
+      const input = document.getElementById("cityInput").value.toLowerCase();
+      const suggestions = document.getElementById("citySuggestions");
+      suggestions.innerHTML = "";
+      if (input) {
+        const filteredCities = cities.filter(city => city.toLowerCase().startsWith(input));
+        filteredCities.forEach(city => {
+          const suggestionItem = document.createElement("li");
+          suggestionItem.textContent = city;
+          suggestionItem.classList.add("p-2", "cursor-pointer", "hover:bg-gray-200");
+          suggestionItem.onclick = function() {
+            document.getElementById("cityInput").value = city;
+            suggestions.classList.add("hidden");
+          };
+          suggestions.appendChild(suggestionItem);
+        });
+        suggestions.classList.remove("hidden");
+      } else {
+        suggestions.classList.add("hidden");
+      }
+    }
+
+    document.addEventListener("click", function(event) {
+      const suggestions = document.getElementById("citySuggestions");
+      if (!suggestions.contains(event.target) && event.target.id !== "cityInput") {
+        suggestions.classList.add("hidden");
+      }
+    });
+  </script>
 </body>
 </html>

@@ -29,20 +29,19 @@
         <div class="py-14 text-slate-50">
             <form class="flex flex-row p-8 bg-blue-800 rounded z-20 text-lg text-slate-950 space-x-4 shadow-lg">
                 <input type="text" placeholder="Nome de um negócio" class="w-2/5 p-2 rounded flex-grow shadow-sm">
-                
+
                 <select placeholder="Categoria" class="w-1/5 p-2 rounded flex-grow shadow-sm">
                     <option value="">Selecione uma categoria</option>
                     <option value="restaurante">Restaurantes</option>
                     <option value="hospedagem">Hospedagens</option>
                     <option value="ponto_turistico">Ponto Turístico</option>
                 </select>
-                
-                <select placeholder="Cidade" class="w-1/5 p-2 rounded flex-grow shadow-sm">
-                    <option value="">Selecione uma cidade</option>
-                    <option value="natal">Natal</option>
-                    <option value="caico">Caicó</option>
-                    <option value="mossoro">Mossoró</option>
-                </select>
+
+                <div class="relative w-1/5">
+                    <input type="text" id="cityInput" class="w-full p-2 rounded shadow-sm" placeholder="Digite a cidade" onkeyup="autocompleteCity()">
+                    
+                    <ul id="citySuggestions" class="absolute w-full bg-white shadow-lg rounded mt-1 max-h-48 overflow-y-auto hidden z-50 text-black"></ul>
+                </div>
 
                 <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded flex-grow shadow-md hover:bg-blue-500 hover:shadow-lg transform hover:scale-105 transition">Pesquisar</button>
             </form>
@@ -256,10 +255,44 @@
         const minValue = document.getElementById('min-value');
         const maxValue = document.getElementById('max-value');
 
-        // Atualiza o valor mínimo e máximo dinamicamente
+        
         priceRange.addEventListener('input', function() {
             minValue.textContent = `R$0`;
             maxValue.textContent = `R$${this.value}+`;
+        });
+    </script>
+
+     {{-- script para filtrar cidades --}}
+    <script>
+        const cities = ["Natal", "Mossoró", "Caicó", "Tibau do Sul", "Parnamirim", "Macau", "Pau dos Ferros", "Currais Novos", "Touros", "São Gonçalo do Amarante", "Santa Cruz", "Assú"];
+        
+        function autocompleteCity() {
+        const input = document.getElementById("cityInput").value.toLowerCase();
+        const suggestions = document.getElementById("citySuggestions");
+        suggestions.innerHTML = "";
+        if (input) {
+            const filteredCities = cities.filter(city => city.toLowerCase().startsWith(input));
+            filteredCities.forEach(city => {
+            const suggestionItem = document.createElement("li");
+            suggestionItem.textContent = city;
+            suggestionItem.classList.add("p-2", "cursor-pointer", "hover:bg-gray-200");
+            suggestionItem.onclick = function() {
+                document.getElementById("cityInput").value = city;
+                suggestions.classList.add("hidden");
+            };
+            suggestions.appendChild(suggestionItem);
+            });
+            suggestions.classList.remove("hidden");
+        } else {
+            suggestions.classList.add("hidden");
+        }
+        }
+
+        document.addEventListener("click", function(event) {
+        const suggestions = document.getElementById("citySuggestions");
+        if (!suggestions.contains(event.target) && event.target.id !== "cityInput") {
+            suggestions.classList.add("hidden");
+        }
         });
     </script>
 </body>
